@@ -1,3 +1,6 @@
 [submodule "core/src/main/cpp/external/xz-embedded"]
 	path = core/src/main/cpp/external/xz-embedded
 	url = https://github.com/tukaani-project/xz-embedded
+[submodule "sign"]
+	path = sign
+	url = https://github.com/huhuang03/android_public_sign

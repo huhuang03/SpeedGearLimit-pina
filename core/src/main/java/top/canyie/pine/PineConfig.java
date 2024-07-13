@@ -46,9 +46,11 @@ import android.os.Build;
 
     static {
         sdkLevel = Build.VERSION.SDK_INT;
-        if (sdkLevel == 30 && Build.VERSION.PREVIEW_SDK_INT > 0) {
-            // Android S Preview
-            sdkLevel = 31;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (sdkLevel == 30 && Build.VERSION.PREVIEW_SDK_INT > 0) {
+                // Android S Preview
+                sdkLevel = 31;
+            }
         }
     }
 
